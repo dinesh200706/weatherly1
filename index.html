@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weatherly - Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>☀ Weatherly</h1>
+      <p>Your daily weather companion</p>
+    </header>
+
+    <form id="search-form">
+      <input id="city-input" placeholder="Enter city name..." required>
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="status" role="status">Loading weather...</p>
+
+    <section class="weather-card">
+      <h2 id="location">Chennai</h2>
+      <p id="date"></p>
+      <div id="icon">🌤️</div>
+      <h1 id="temperature">--°C</h1>
+      <h3 id="condition">Loading...</h3>
+
+      <div class="details">
+        <div>
+          <span>💧 Humidity</span>
+          <strong id="humidity">--%</strong>
+        </div>
+        <div>
+          <span>🌬️ Wind</span>
+          <strong id="wind">-- km/h</strong>
+        </div>
+        <div>
+          <span>🌡️ Feels like</span>
+          <strong id="feels">--°C</strong>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Next 5 Days</h2>
+      <div id="forecast" class="forecast"></div>
+    </section>
+
+    <footer>
+      Weather data by
+      <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a>
+    </footer>
+  </main>
+</body>
+</html>
